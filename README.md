@@ -1,12 +1,63 @@
-# React + Vite
+# Loan Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive and theme-switchable loan calculator web application built using **React**, **Material UI**, **React Router**, and **Context API**. It allows users to calculate monthly EMI and view a detailed amortization schedule. Also includes live currency exchange rates powered by an external API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **EMI Calculator** – Calculate monthly installments based on loan amount, interest rate, and term.
+- **Amortization Schedule** – Breakdown of each month's principal, interest, and remaining balance.
+- **Live Exchange Rates** – Fetches latest currency rates using ExchangeRate API.
+- **Dark / Light Mode** – Toggle between dark and light themes using global state.
+- **Responsive Design** – Optimized for mobile and desktop views.
+- **Clean Component Architecture** – Modular code using React best practices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **React 18**
+- **Material UI (MUI v5)**
+- **React Router**
+- **ExchangeRate API**
+- **Context API** (Theme + Currency Context)
+- **Vite** for build and development
+
+---
+
+## Installation
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/KalpeshKumar-09/Loan-Calculator-App.git
+cd Loan-Calculator-App
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+```
+
+3. **Add API key**
+   _Create a .env file in the root and add:_
+
+```bash
+VITE_CURRENCY_CONVERSION_API_KEY=your_api_key_here
+```
+
+4. **Start the development server**
+
+```bash
+npm run dev
+```
+
+# Folder Structure
+
+├── src
+│ ├── api/ # Axios API calls
+│ ├── components/ # Navbar and UI components
+│ ├── context/ # Theme and Currency Context
+│ ├── pages/ # Main pages (Home, About
